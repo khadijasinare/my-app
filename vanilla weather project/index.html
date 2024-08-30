@@ -4,12 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weatherfinder</title>
-    <script>
 
-        window.onload = function() {
-            window.location.href = "display.html";
-        }
-    </script>
     <style>
     
         .parent{
@@ -68,7 +63,7 @@
             event.preventDefault();
             let input=document.querySelector("#city-input");
             localStorage.setItem("city",input.value)
-            window.location.href="index.html"
+            window.location.href="display.html"
             
         }
         let form=document.querySelector("#city-search");
