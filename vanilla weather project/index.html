@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherfinder</title>
+    <style>
+    
+        .parent{
+    max-width: 600px;
+    margin: 60px auto;
+    margin-top: 200px;
+    padding: 40px;
+    border-radius: 10px;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:weight;
+    font-style:normal;
+   
+   
+}
+
+        .city-search{
+            text-align: center;
+            
+        }
+        .city-search-input{    
+           background-image:url("./img/search_30dp_5985E1_FILL0_wght400_GRAD0_opsz24.png") ;
+           background-size: contain;
+            width: 30px;
+           height: 30px;
+           position: relative;
+           top: 5px;
+           border: none;
+           background-color: rgb(228, 250, 250);
+       
+        }
+        .city-input{
+            font-size: larger;
+            width: 350px;
+            padding:7px;
+            padding-left: 15px;
+            border: solid,0.5px,rgb(136, 135, 134);
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+            background-color:  rgb(237, 240, 240);
+            color: rgb(65, 44, 17);;
+}
+
+    </style>
+</head>
+<body background="./img/R.jpg" >
+    <div class="parent">
+        <form class="city-search" id="city-search">
+            <input type="text" placeholder="Enter City..." class="city-input" id="city-input" required>
+            <button class="city-search-input" id="city-search-input"></button>
+        </form>
+    </div>
+    <script>
+        function stopReload(event){
+            event.preventDefault();
+            let input=document.querySelector("#city-input");
+            localStorage.setItem("city",input.value)
+            window.location.href="index.html"
+            
+        }
+        let form=document.querySelector("#city-search");
+        form.addEventListener("submit",stopReload)
+        
+        
+        
+    </script>
+    
+</body>
+</html>

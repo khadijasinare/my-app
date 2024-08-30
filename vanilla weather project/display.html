@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Weatherfinder</title>
+</head>
+<body>
+    <div class="parent">
+         <header>
+            <h1> <span id="city"></span>,<span id="country"></span></h1>
+        <div class="current-date" id="current-date"></div>
+        <div current-weather>
+            <span class="emoji" id="image">--</span><span class="value" id="temperature-value">--</span><span class="unit">℃</span> 
+            <div class="description" id="description"></div>
+        </div>
+    </header>
+    <section>
+        <div class="general-current-condition">
+            <div class="current-temperature">
+                <div class="currently"><strong><span id="currently"></span></strong><span class="degree">°</span></div>
+            <div>Feels like</div>
+            
+           <div class="atmos"><strong><span id="atmos"></span></strong> atm</div>
+           <div>Pressure</div>
+            </div>
+            <div class="current-condition">
+                <div class="wind-value"><strong><span id="wind-value"></span></strong>m/s</div>
+                <div>Wind</div>
+                 
+                <div class="humidity-value"><strong><span id="humidity-value"></span></strong>%</div>
+                <div>Humidity</div>
+            </div>
+            
+        </div>
+        
+    </section>
+    <main>
+    <div class="forecast-weather"  id="forecast-weather"> 
+   </div>
+   </main>
+
+    <small>
+    <p>
+      This project was coded by
+      <a href="https://github.com/khadijasinare" target="_blank">khadija sinare</a> and is
+      <a href="https://github.com/khadijasinare/my-projects" target="_blank"> on GitHub</a> and
+      <a href="" target="_blank">hosted on render</a>
+    </p>
+    </small>
+  
+</div>
+
+  <script src="src/index.js"></script>    
+</body>
+</html>
